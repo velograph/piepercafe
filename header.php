@@ -22,13 +22,20 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'Pieper Cafe' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+
+		<section class="location-hours">
+
+			<p><a href="http://goo.gl/WsOo5c" target="_blank">6504 SE Foster Rd. Portland, OR 97206</a> / <a href="tel:9712717471">971.271.7471</a></p>
+			<p>M-F: 7am&mdash;4pm / Sat-Sun: 8am&mdash;4pm</p>
+
+		</section>
+
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/pieper_logo.jpg" />
+			</a>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

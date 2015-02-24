@@ -16,3 +16,31 @@
 @import "base/grid-settings";
 @import "neat/neat";
 @import "base/base";
+
+@import "variables";
+
+body {
+	@include outer-container;
+	text-align: center;
+	.skip-link {
+		position: absolute;
+		text-indent: -9999px;
+	}
+	#page {
+		@include pad( $twentyfive );
+		@include media( $large-screen ) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+	}
+	.serving-stumptown {
+		svg {
+			max-width: 200px;
+		}
+	}
+	.footer {
+		.site-info {
+			font-size: modular-scale(-1);
+		}
+	}
+}

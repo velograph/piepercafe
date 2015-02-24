@@ -12,7 +12,7 @@
 
 	<footer class="footer" role="contentinfo">
 		<div class="site-info">
-			&copy; <?php the_time('Y'); ?>
+			&copy; <?php the_time('Y'); ?> Pieper Cafe / Built by <a href="http://velograph.net" target="_blank">Velograph</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
