@@ -8,14 +8,17 @@
  */
 ?>
 
-	</div><!-- #content -->
+		</div><!-- #content -->
+
+	</section>
 
 	<footer class="footer" role="contentinfo">
 		<div class="site-info">
 			&copy; <?php the_time('Y'); ?> Pieper Cafe / Built by <a href="http://velograph.net" target="_blank">Velograph</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+
+</div><!-- .container -->
 
 <?php wp_footer(); ?>
 

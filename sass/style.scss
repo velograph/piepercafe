@@ -20,17 +20,27 @@
 @import "variables";
 
 body {
-	@include outer-container;
+	@include pad( $twentyfive );
+	font-family: $courier;
+	margin: 0;
 	text-align: center;
 	.skip-link {
 		position: absolute;
 		text-indent: -9999px;
 	}
-	#page {
-		@include pad( $twentyfive );
-		@include media( $large-screen ) {
-			@include span-columns(8);
-			@include shift(2);
+	@include media( $large-screen ) {
+		.container {
+			@include outer-container;
+			.main-content {
+				@include row();
+				.site-header {
+					@include span-columns(4);
+				}
+				.site-content {
+					@include span-columns(8);
+					@include omega;
+				}
+			}
 		}
 	}
 	.serving-stumptown {
@@ -40,6 +50,7 @@ body {
 	}
 	.footer {
 		.site-info {
+			@include pad( $twentyfive 0 0 );
 			font-size: modular-scale(-1);
 		}
 	}
