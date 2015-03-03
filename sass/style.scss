@@ -48,6 +48,53 @@ body {
 			max-width: 200px;
 		}
 	}
+	.menu {
+		h1 {
+			margin: $twentyfive 0;
+		}
+		.menu-row {
+			@include row();
+			margin-bottom: $fifty;
+			text-align: left;
+			h2 {
+				@include pad( $five );
+				background: $black;
+				color: $white;
+				font-weight: 400;
+				text-align: center;
+			}
+			.menu-section {
+				@include media( $large-screen ) {
+					@include span-columns(6);
+					&:first-of-type {
+						padding-right: $ten;
+					}
+					&:last-of-type {
+						padding-left: $ten;
+					}
+				}
+				h3 {
+					border-bottom: 1px dotted $black;
+					margin-top: $twentyfive;
+				}
+				strong {
+					float: right;
+				}
+				table {
+					th, td {
+						border: 0;
+						text-align: right;
+						em {
+							display: block;
+						}
+					}
+					td:first-of-type {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
 	.footer {
 		.site-info {
 			@include pad( $twentyfive 0 0 );
