@@ -47,6 +47,8 @@
 
 			<section class="location-hours">
 
+				info@piepercafe.com
+
 				<div class="hours-container">
 					<div class="hours-row">
 						<span class="hours-days">Monday to Friday</span>
