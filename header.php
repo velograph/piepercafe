@@ -47,8 +47,6 @@
 
 			<section class="location-hours">
 
-				info@piepercafe.com
-
 				<div class="hours-container">
 					<div class="hours-row">
 						<span class="hours-days">Monday to Friday</span>
@@ -66,6 +64,8 @@
 
 					<address><a href="http://goo.gl/WsOo5c" target="_blank">6504 SE Foster Rd.<br>Portland, OR 97206</a></address>
 					<p><a href="tel:9712717471">971.271.7471</a></p>
+
+					<a href="mailto:info@piepercafe.com">info@piepercafe.com</a>
 
 				</div>
 
@@ -153,6 +153,9 @@
 						    </g>
 						</svg>
 					</a>
+
+					<hr />
+
 				</div>
 
 				<div class="fb-like-box" data-href="https://www.facebook.com/PieperCafe" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
