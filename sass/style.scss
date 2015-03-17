@@ -28,6 +28,9 @@ body {
 		position: absolute;
 		text-indent: -9999px;
 	}
+	.site-header {
+		margin-bottom: $fifty;
+	}
 	@include media( $large-screen ) {
 		.container {
 			@include outer-container;
@@ -92,6 +95,15 @@ body {
 						text-align: left;
 					}
 				}
+			}
+		}
+	}
+	table {
+		th:first-of-type,
+		td:first-of-type {
+			width: 100px;
+			@include media( $large-screen ) {
+				width: 200px;
 			}
 		}
 	}

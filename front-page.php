@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<img src="<?php the_field('top_image_banner'); ?>" />
+			<img src="<?php the_field('top_image'); ?>" />
 
 			<section class="menu">
 
@@ -63,7 +63,7 @@ get_header(); ?>
 
 			</section>
 
-			<img src="<?php the_field('bottom_image_banner'); ?>" />
+			<img src="<?php the_field('location_image'); ?>" />
 
 		<?php endwhile; // end of the loop. ?>
 
